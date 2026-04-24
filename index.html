@@ -486,10 +486,18 @@ $(document).ready(function(){
 
 
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
+(function(){
+  emailjs.init("f9hDOyLzOfXevMe4O"); // 🔴 replace this
+})();
+</script>
+
+
+<script id="fix-load">
+document.addEventListener("DOMContentLoaded", function() {
+
 const form = document.getElementById("callbackForm");
 
 const firstname = document.getElementById("firstname");
@@ -502,22 +510,18 @@ form.addEventListener("submit", function(e) {
   e.preventDefault();
 
   let isValid = true;
-
   clearErrors();
 
-  // First Name
   if (firstname.value.trim() === "") {
     showError(firstname, "First Name is required");
     isValid = false;
   }
 
-  // Last Name
   if (lastname.value.trim() === "") {
     showError(lastname, "Last Name is required");
     isValid = false;
   }
 
-  // Phone
   if (phone.value.trim() === "") {
     showError(phone, "Phone number is required");
     isValid = false;
@@ -526,7 +530,6 @@ form.addEventListener("submit", function(e) {
     isValid = false;
   }
 
-  // Email
   if (email.value.trim() === "") {
     showError(email, "Email is required");
     isValid = false;
@@ -535,19 +538,29 @@ form.addEventListener("submit", function(e) {
     isValid = false;
   }
 
-  // Message
   if (message.value.trim() === "") {
     showError(message, "Message is required");
     isValid = false;
   }
 
-  if (!isValid) {
-    alert("Please fill all required fields correctly.");
-    return;
-  }
+  if (!isValid) return;
 
+emailjs.send("service_kbpdoab", "template_oyr3ymh", {
+  firstName: firstname.value,
+  lastName: lastname.value,
+  phoneNo: phone.value,
+  emailid: email.value,
+  message: message.value
+})
+.then(function() {
   alert("Form submitted successfully!");
   form.reset();
+})
+.catch(function(error) {
+  console.error(error);
+  alert("Failed to send message");
+});
+
 });
 
 function showError(input, messageText) {
@@ -561,9 +574,10 @@ function clearErrors() {
   document.querySelectorAll("input, textarea").forEach(el => el.classList.remove("error-border"));
 }
 
-// Phone me text allow nahi hoga
 phone.addEventListener("input", function() {
   this.value = this.value.replace(/[^0-9]/g, "");
+});
+
 });
 </script>
 </body>
