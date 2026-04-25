@@ -21,7 +21,8 @@
     <title>Golden Triangle</title>
 </head>
 <body>
-    
+
+
 
 <header class="header">
     <div class="left-section">
@@ -57,7 +58,45 @@
     <!-- Hidden Google Translate -->
     <div id="google_translate_element" style="display:none;"></div>
 
-    <a href="#form" class="trip-btn">Create your trip</a>
+  <a href="javascript:void(0)" class="trip-btn tp" onclick="openPopup()">Book Now</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+<div id="bookPopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div class="popup-body">
+            <div class="popup-image">
+                <img src="images/popup.jpg" alt="Travel">
+            </div>
+            <div class="popup-form">
+                <h3>Enquire Now</h3>
+                <form id="enquiryForm">
+                    <input type="text" id="p_name" placeholder="Full Name *" required>
+                    <input type="email" id="p_email" placeholder="Email Address *" required>
+
+                    <div style="margin-bottom: 15px;">
+                        <input type="tel" id="p_phone" style="width: 100%;" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="field-group" style="width:100%">
+                            <label style="font-size: 11px; color: #666;">Arrival Date</label>
+                            <input type="date" id="p_arrival" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="display:flex; gap:10px;">
+                        <input type="number" id="p_adults" placeholder="Adults" min="1">
+                        <input type="number" id="p_kids" placeholder="Kids" min="0">
+                    </div>
+
+                    <textarea id="p_query" placeholder="Enter Your Travel Query" rows="4"></textarea>
+                    <button type="submit" class="submit-btn">Submit Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
    
@@ -76,7 +115,7 @@
     <a href="#attracts">Royal Attractions</a>
     
     <a href="#testimonial">Happy Clients</a>
-    <a href="#form">Contact Us</a>
+ <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
 </div>
 
 
@@ -93,12 +132,12 @@
         <div class="banner-content">
             <h1>Travel according to your desires</h1>
             <p>Our tailor-made suggestions based on the season, your tastes, and your budget</p>
-            <a href="#form" class="custom-search-btn">
-                <span class="btn-text">Explore the Golden Triangle</span>
-                <div class="icon-circle">
-                    <img src="images/btn.png">
-                </div>
-            </a>
+           <a href="javascript:void(0)" class="custom-search-btn top" onclick="openPopup()">
+    <span class="btn-text">Explore the Golden Triangle</span>
+    <div class="icon-circle">
+        <img src="images/btn.png">
+    </div>
+</a>
         </div>
     </div>
 </section>
@@ -120,14 +159,28 @@
 
 </div>
 </section>
-<img src="images/line.png">
+<img src="images/line.png" class="arch">
 
 
 <section class="services" id="Packages">
 <div class="wrap">
-    <h2>OUR PACKAGES</h2>
+    <h2>GOLDEN TRIANGLE</h2>
     <p>Discover thoughtfully curated Golden Triangle journeys designed<br> for seamless travel and unforgettable cultural experiences.</p>
 <ul class="service">
+    <li>
+    <a href="#">
+      <div class="img-boxs">
+        <img src="images/delhi.jpg" alt="Jaipur">
+        <h3>Delhi</h3>
+
+        <div class="btn-boxs">
+          <h4>EXPLORE NOW</h4>
+          <img src="images/btn-1.png" alt="">
+        </div>
+
+      </div>
+    </a>
+  </li>
   <li>
     <a href="#">
       <div class="img-boxs">
@@ -156,20 +209,7 @@
       </div>
     </a>
   </li>
-    <li>
-    <a href="#">
-      <div class="img-boxs">
-        <img src="images/delhi.jpg" alt="Jaipur">
-        <h3>Delhi</h3>
-
-        <div class="btn-boxs">
-          <h4>EXPLORE NOW</h4>
-          <img src="images/btn-1.png" alt="">
-        </div>
-
-      </div>
-    </a>
-  </li>
+  
 </ul>
        
 
@@ -183,7 +223,109 @@
 
 <section class="attract" id="attracts">
 <div class="wrap">
-    <h2>Royal Attractions</h2>
+    <h2>Delhi Attractions</h2>
+   <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
+
+   <ul class="attract-list team-carousel ">
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-1.jpg" alt="Amber Fort">
+            <h3>Amber Fort</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-2.jpg" alt="Amber Fort">
+            <h3>Taj Mahal</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-3.jpg" alt="Amber Fort">
+            <h3>India Gate</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-4.jpg" alt="Amber Fort">
+            <h3>Jaigarh Fort</h3>
+        </div>
+    </li>
+      <li class="item">
+        <div class="img-box">
+            <img src="images/attract-5.jpg" alt="Amber Fort">
+            <h3>Anguri Bagh</h3>
+        </div>
+    </li>
+</ul>
+
+
+      
+        
+        
+       
+    </ul>
+</div>
+</section>
+
+
+<section class="attract two" id="attracts">
+<div class="wrap">
+    <h2>Agra Attractions</h2>
+   <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
+
+   <ul class="attract-list team-carousel ">
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-1.jpg" alt="Amber Fort">
+            <h3>Amber Fort</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-2.jpg" alt="Amber Fort">
+            <h3>Taj Mahal</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-3.jpg" alt="Amber Fort">
+            <h3>India Gate</h3>
+        </div>
+    </li>
+
+    <li class="item">
+        <div class="img-box">
+            <img src="images/attract-4.jpg" alt="Amber Fort">
+            <h3>Jaigarh Fort</h3>
+        </div>
+    </li>
+      <li class="item">
+        <div class="img-box">
+            <img src="images/attract-5.jpg" alt="Amber Fort">
+            <h3>Anguri Bagh</h3>
+        </div>
+    </li>
+</ul>
+
+
+      
+        
+        
+       
+    </ul>
+</div>
+</section>
+
+
+<section class="attract" id="attracts">
+<div class="wrap">
+    <h2>Jaipur Attractions</h2>
    <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
 
    <ul class="attract-list team-carousel ">
@@ -233,8 +375,7 @@
 
 
 
-
-<img src="images/line-2.png">
+<img src="images/line-2.png" class="arch">
 <section class="testi" id="testimonial">
 <div class="wrap">
 <h2>Loved by Our Guests</h2>
@@ -284,64 +425,7 @@
 </section>
 
 
-<section class="frm" id="form">
-<div class="wrap">
 
-<form id="callbackForm" novalidate>
-<div class="enrollment-card">
-  <div class="form-header">
-    <h2>Explore Now</h2>
-  </div>
-
-  <div class="form-body">
-
-    <div class="form-row">
-      <div class="input-group">
-        <input type="text" id="firstname" placeholder="First Name">
-        <small class="error"></small>
-      </div>
-
-      <div class="input-group">
-        <input type="text" id="lastname" placeholder="Last Name">
-        <small class="error"></small>
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div class="input-group">
-        <input type="tel" id="phone" placeholder="Phone" maxlength="10">
-        <small class="error"></small>
-      </div>
-
-      <div class="input-group">
-        <input type="email" id="email" placeholder="Email">
-        <small class="error"></small>
-      </div>
-    </div>
-
-    <div class="message-wrapper input-group">
-      <textarea id="message" placeholder="Your Message"></textarea>
-      <small class="error"></small>
-    </div>
-
-    <button type="submit" class="submit-btn">
-      <span class="btn-texts">Request Callback</span>
-      <span class="btn-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-          <path d="M9 5l7 7-7 7"/>
-        </svg>
-      </span>
-    </button>
-
-    <p class="disclaimer">
-Note: All fields are mandatory. Please complete them accurately before submitting to avoid delays.
-    </p>
-
-  </div>
-</div>
-</form>
-</div>
-</section>
 
 <footer class="footer">
   <div class="container">
@@ -358,7 +442,7 @@ Note: All fields are mandatory. Please complete them accurately before submittin
         <li><a href="#abouts">About Us</a></li>
         <li><a href="#Packages">Packages</a></li>
          <li><a href="#testimonial">Happy Clients</a></li>
-        <li><a href="#form">Contact</a></li>
+      <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
       </ul>
     </div>
 
@@ -383,6 +467,12 @@ Note: All fields are mandatory. Please complete them accurately before submittin
    target="_blank">
    <img src="images/whatshapp.png" alt="WhatsApp">
 </a>
+
+
+
+<a href="javascript:void(0)" class="mobile-sticky-btn" onclick="openPopup()">Book Now</a>
+
+
 
 <script src="script.js"></script>
 
@@ -450,18 +540,25 @@ document.getElementById("lang-select").addEventListener("change", function () {
 $(document).ready(function(){
 
   // Team Carousel
-  $('.team-carousel').owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      nav: true,
-      responsive: {
-          0: { items: 1 },
-          600: { items: 4 },
-          1000: { items: 5 }
-      }
-  });
-
+$('.team-carousel').owlCarousel({
+    margin: 15, // Mobile par margin thoda kam rakhein taaki space mile
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: true,
+    responsive: {
+        0: { 
+            items: 1, // Ab 0px se hi 2 items dikhenge
+            margin: 0 // Chhoti screen ke liye kam gap
+        },
+        700: { 
+            items: 2 
+        },
+        1000: { 
+            items: 4
+        }
+    }
+});
   // Testimonial Carousel
   $('.testimonial-carousel').owlCarousel({
       margin: 20,
@@ -482,103 +579,111 @@ $(document).ready(function(){
 
 
 
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<script>
-(function(){
-  emailjs.init("f9hDOyLzOfXevMe4O"); // 🔴 replace this
+<script type="text/javascript">
+(function() {
+    // Dashboard > Account > Public Key se ye copy karein
+    emailjs.init("f9hDOyLzOfXevMe4O"); 
 })();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const phoneElement = document.querySelector("#p_phone");
+    const form = document.getElementById("enquiryForm");
+
+    // Phone Input Setup
+    const iti = window.intlTelInput(phoneElement, {
+        initialCountry: "in",
+        separateDialCode: true,
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    // Submit Logic
+    if(form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            if (!iti.isValidNumber()) {
+                alert("Please enter a valid phone number.");
+                return;
+            }
+
+            const btn = form.querySelector(".submit-btn");
+            btn.innerText = "Sending...";
+            btn.disabled = true;
+
+            const templateParams = {
+                from_name: document.getElementById("p_name").value,
+                user_email: document.getElementById("p_email").value,
+                phone_no: iti.getNumber(),
+                arrival_date: document.getElementById("p_arrival").value,
+                adults_count: document.getElementById("p_adults").value || "0",
+                kids_count: document.getElementById("p_kids").value || "0",
+                message: document.getElementById("p_query").value
+            };
+
+          
+            emailjs.send("service_kbpdoab", "template_oyr3ymh", templateParams)
+                .then(function() {
+                    alert("Success! Your enquiry has been sent. We will contact you soon.");
+                    form.reset();
+                    btn.innerText = "Submit Now";
+                    btn.disabled = false;
+                    closePopup();
+                }, function(error) {
+                    alert("Failed to send... " + JSON.stringify(error));
+                    btn.innerText = "Submit Now";
+                    btn.disabled = false;
+                });
+        });
+    }
+});
+
+function closePopup() {
+    document.getElementById("bookPopup").style.display = "none";
+}
 </script>
 
 
-<script id="fix-load">
-document.addEventListener("DOMContentLoaded", function() {
 
-const form = document.getElementById("callbackForm");
 
-const firstname = document.getElementById("firstname");
-const lastname = document.getElementById("lastname");
-const phone = document.getElementById("phone");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  let isValid = true;
-  clearErrors();
 
-  if (firstname.value.trim() === "") {
-    showError(firstname, "First Name is required");
-    isValid = false;
-  }
 
-  if (lastname.value.trim() === "") {
-    showError(lastname, "Last Name is required");
-    isValid = false;
-  }
 
-  if (phone.value.trim() === "") {
-    showError(phone, "Phone number is required");
-    isValid = false;
-  } else if (!/^[0-9]{10}$/.test(phone.value.trim())) {
-    showError(phone, "Phone must be 10 digits");
-    isValid = false;
-  }
 
-  if (email.value.trim() === "") {
-    showError(email, "Email is required");
-    isValid = false;
-  } else if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email.value.trim())) {
-    showError(email, "Enter a valid email");
-    isValid = false;
-  }
 
-  if (message.value.trim() === "") {
-    showError(message, "Message is required");
-    isValid = false;
-  }
 
-  if (!isValid) return;
 
-emailjs.send("service_kbpdoab", "template_oyr3ymh", {
-  firstName: firstname.value,
-  lastName: lastname.value,
-  phoneNo: phone.value,
-  emailid: email.value,
-  message: message.value
-})
-.then(function() {
-  alert("Form submitted successfully!");
-  form.reset();
-})
-.catch(function(error) {
-  console.error(error);
-  alert("Failed to send message");
-});
 
-});
 
-function showError(input, messageText) {
-  const error = input.parentElement.querySelector(".error");
-  error.innerText = messageText;
-  input.classList.add("error-border");
+
+
+
+
+
+
+
+
+<script>
+  function openPopup() {
+    document.getElementById("bookPopup").style.display = "block";
 }
 
-function clearErrors() {
-  document.querySelectorAll(".error").forEach(el => el.innerText = "");
-  document.querySelectorAll("input, textarea").forEach(el => el.classList.remove("error-border"));
+function closePopup() {
+    document.getElementById("bookPopup").style.display = "none";
 }
 
-phone.addEventListener("input", function() {
-  this.value = this.value.replace(/[^0-9]/g, "");
-});
-
-});
+// Close popup if user clicks outside the box
+window.onclick = function(event) {
+    let modal = document.getElementById("bookPopup");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 </script>
 </body>
 </html>

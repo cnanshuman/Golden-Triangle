@@ -456,7 +456,12 @@ body {
     z-index: 2;
     font-weight: 400;
 }
-
+.attract.two{
+    background: url(../images/back.jpg) 0 0/cover no-repeat;
+    padding: 60px 0;
+    display: block;
+    margin-top: -9px;
+    }
 .testi::before{background-image: url(../images/back.jpg)no-repeat center center;}
 
 .testi{
@@ -694,7 +699,7 @@ textarea.error-border {
 
 
 
-
+.arch{width:100%;background-size:cover;}
 
 
 
@@ -712,15 +717,140 @@ textarea.error-border {
   cursor: pointer;
 }
 
+/* Popup Background */
+.popup-overlay {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px); /* Modern blur effect */
+}
 
+/* Main Container */
+.popup-content {
+    background-color: #fff;
+    margin: 2% auto;
+    width: 90%;
+    max-width: 850px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    max-height: 92vh;
+}
 
+.popup-body {
+    display: flex;
+    align-items: stretch;
+}
 
-/* Mobile */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+.popup-image {
+    flex: 1.1;
+    display: block;
+}
+
+.popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-form {
+    flex: 1;
+    padding: 30px 30px;
+}
+
+/* Responsive Fix: Hide image at 600px */
+@media (max-width: 600px) {
+    .popup-image { display: none; }
+    .popup-content { margin: 10% auto; width: 95%; }
+    .popup-form { padding: 30px 20px; }
+}
+
+.popup-form h3 {
+    margin-top: 0;
     text-align: center;
-  }
+    font-size: 26px;
+    font-family: "Libre Baskerville", serif;
+    color: #b84b2f;
+    margin-bottom: 20px;
+}
+
+/* Professional Input Styling */
+.popup-form input, 
+.popup-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 11px;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.popup-form input:focus, 
+.popup-form textarea:focus {
+    border-color: #b84b2f;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(184, 75, 47, 0.1);
+}
+
+/* Phone Field Full Width Fix */
+.iti { 
+    width: 100% !important; 
+    margin-bottom: 15px; 
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.field-group label {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #b84b2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.3s;
+    display: block;
+}
+
+.submit-btn:hover {
+    background-color: #9a3d24;
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    color: #333;
+    font-size: 24px;
+    z-index: 10;
+    line-height: 1;
+}
+
+.mobile-sticky-btn {
+    display: none;
 }
 
 
@@ -742,4 +872,133 @@ textarea.error-border {
     .header {
         padding: 0 20px;
     }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-content h1{font-size: 44px;}
+  .about .inr{flex-direction: column;gap: 10px;}
+  .about .inr .lft h2{font-family: "Libre Baskerville", serif;color:#733600;}
+  .about .inr .rgt p{font-size: 22px;line-height: 37px;}
+  .about{margin-top:50px;margin-bottom: 50px;}
+  .btn-boxs h4{font-size:10px;}
+  .btn-boxs img{width:8px;height:8px;}
+  .img-boxs h3{bottom: 66px;}
+  .img-box h3{bottom:8px;font-size:17px;}
+  .footer-col{flex: 1 1 89px;}
+}
+
+@media (max-width: 640px) {
+.img-box h3{font-size:21px;bottom:12px;}
+.service{
+    flex-direction: column;
+    
+}
+    .img-boxs h3{bottom:66px;}
+    .service li{
+    margin-bottom:25px;
+    margin-right: 0px;
+}
+}
+
+
+
+@media (max-width: 574px) {
+.btn-text{font-size:15px;margin-right:7px;}
+.icon-circle{width:40px;height:40px;}
+.custom-search-btn{padding:6px 6px 6px 12px;}
+.header .book-now-header, 
+    .nav-btn, 
+    header .trip-btn { 
+        display: none !important; 
+    }
+
+    /* 2. Naya Sticky Bottom Button show karne ke liye */
+    .mobile-sticky-btn {
+        display: block !important;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #b84b2f;
+        color: white;
+        text-align: center;
+        font-weight: 400;
+        text-decoration: none;
+        z-index: 9999;
+        box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+        border: none;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 7px 11px;
+        letter-spacing: 2px;
+        border-top: 1px dashed #fff;
+    }
+
+    /* 3. Banner button ko normal rakhne ke liye */
+    .custom-search-btn {
+        position: relative !important;
+        display: flex !important;
+        width: 100% !important;
+        max-width: 350px;
+        margin: 20px auto !important;
+    }
+
+    body {
+        padding-bottom: 37px; /* Sticky button ke liye niche space */
+    }
+.custom-search-btn.top{
+    width: fit-content !important;
+    margin: 0 !important;
+}
+.banner-content p{margin-bottom: 20px;}
+.whatsapp-float{
+  bottom:50px;
+}
+.whatsapp-float img{
+  width:50px;
+  height:50px;}
+  .about .inr .rgt p{font-size: 16px;line-height: 28px;}
+  .services{margin-bottom: 50px;}
+  .attract{margin-bottom: 70px;}
+  .attract p br{display: none;}
+    .attract p{margin-bottom: 15px;}
+}
+
+
+@media (max-width: 510px) {
+.banner-content h1{font-size: 41px;}
+.services h2{font-size: 26px;}
+.services p br{display: none;}
+.services p{line-height: 20px;font-size: 14px;}
+
+.attract h2{font-size: 26px;}
+.attract p{line-height: 20px;font-size: 14px;}
+
+.testi h2{font-size: 26px;margin-bottom: 12px;}
+
+}
+
+
+@media (max-width: 446px){
+
+.banner-content h1{font-size: 32px;}
+.logo{font-size:16px;}
+#lang-select{width:62px;height: 29px;}
+.header{height:47px;}
+}
+
+@media (max-width:356px){
+.about .inr .rgt p{font-size: 15px;line-height: 26px;}
+.banner-content p{font-size: 16px;}
+.attract h2{font-size: 21px;}
+.logo{font-size: 13px;}
+.services h2{font-size: 21px;}
+
+.services p{line-height: 17px;font-size: 12px;}
+.attract p{line-height: 17px;font-size: 12px;}
 }
