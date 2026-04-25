@@ -876,6 +876,9 @@ textarea.error-border {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .testi ul .item img{display: none;}
+
+  .owl-carousel .owl-item img{width:100% !important;}
   .container {
     flex-direction: column;
     text-align: center;
@@ -893,7 +896,7 @@ textarea.error-border {
 }
 
 @media (max-width: 640px) {
-.img-box h3{font-size:21px;bottom:12px;}
+.img-box h3{font-size: 28px;bottom:12px;}
 .service{
     flex-direction: column;
     
