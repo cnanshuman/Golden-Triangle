@@ -992,6 +992,16 @@ textarea.error-border {
 .header{height:47px;}
 }
 
+@media (max-width:375px){
+.popup-content{margin:1% auto;}
+}
+
+
+
+
+
+
+
 @media (max-width:356px){
 .about .inr .rgt p{font-size: 15px;line-height: 26px;}
 .banner-content p{font-size: 16px;}
@@ -1001,4 +1011,8 @@ textarea.error-border {
 
 .services p{line-height: 17px;font-size: 12px;}
 .attract p{line-height: 17px;font-size: 12px;}
+}
+
+@media (max-width:321px){
+  .popup-form h3{font-size: 19px;margin-bottom: 7px;}
 }
