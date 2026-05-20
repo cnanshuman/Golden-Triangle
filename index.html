@@ -1,660 +1,1102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/owl.carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/owl.carousel.js"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+
     <title>Golden Triangle</title>
 </head>
+
 <body>
 
 
 
-<header class="header">
-    <div class="left-section">
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <header class="header">
+        <div class="left-section">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#Packages">Our Packages </i></a>
+                <a href="#testimonial">Happy Clients </i></a>
+            </nav>
         </div>
 
-        <nav class="desktop-nav">
-            <a href="#Packages">Our Packages </i></a>
-            <a href="#testimonial">Happy Clients </i></a>
-        </nav>
-    </div>
+        <div class="logo">
+            GOLDEN TRIANGLE
+        </div>
 
-    <div class="logo">
-       GOLDEN TRIANGLE
-    </div>
 
-   
-<div class="right-section">
+        <div class="right-section">
 
-<div class="lang-box">
-    <i class="fa-solid fa-globe globe-icon"></i>
-    <select id="lang-select">
-        <option value="">Select Language</option>
-    </select>
-</div>
-
-<!-- Hidden Google Translate -->
-<div id="google_translate_element" style="display:none;"></div>
-
-    <!-- Hidden Google Translate -->
-    <div id="google_translate_element" style="display:none;"></div>
-
-  <a href="javascript:void(0)" class="trip-btn tp" onclick="openPopup()">Book Now</a>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
-
-<div id="bookPopup" class="popup-overlay">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <div class="popup-body">
-            <div class="popup-image">
-                <img src="images/popup.jpg" alt="Travel">
+            <div class="lang-box">
+                <i class="fa-solid fa-globe globe-icon"></i>
+                <select id="lang-select">
+                    <option value="">Select Language</option>
+                </select>
             </div>
-            <div class="popup-form">
-                <h3>Enquire Now</h3>
-                <form id="enquiryForm">
-                    <input type="text" id="p_name" placeholder="Full Name *" required>
-                    <input type="email" id="p_email" placeholder="Email Address *" required>
 
-                    <div style="margin-bottom: 15px;">
-                        <input type="tel" id="p_phone" style="width: 100%;" required>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="field-group" style="width:100%">
-                            <label style="font-size: 11px; color: #666;">Arrival Date</label>
-                            <input type="date" id="p_arrival" required>
+            <!-- Hidden Google Translate -->
+            <div id="google_translate_element" style="display:none;"></div>
+
+            <!-- Hidden Google Translate -->
+            <div id="google_translate_element" style="display:none;"></div>
+
+            <a href="javascript:void(0)" class="trip-btn tp" onclick="openPopup()">Book Now</a>
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+            <div id="bookPopup" class="popup-overlay">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <div class="popup-body">
+                        <div class="popup-image">
+                            <img src="images/popup.jpg" alt="Travel">
+                        </div>
+                        <div class="popup-form">
+                            <h3>Enquire Now</h3>
+                            <form id="enquiryForm">
+                                <input type="text" id="p_name" placeholder="Full Name *" required>
+                                <input type="email" id="p_email" placeholder="Email Address *" required>
+
+                                <div style="margin-bottom: 15px;">
+                                    <input type="tel" id="p_phone" style="width: 100%;" required>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="field-group" style="width:100%">
+                                        <label style="font-size: 11px; color: #666;">Arrival Date</label>
+                                        <input type="date" id="p_arrival" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row" style="display:flex; gap:10px;">
+                                    <input type="number" id="p_adults" placeholder="Adults" min="1">
+                                    <input type="number" id="p_kids" placeholder="Kids" min="0">
+                                </div>
+
+                                <textarea id="p_query" placeholder="Enter Your Travel Query" rows="4"></textarea>
+                                <button type="submit" class="submit-btn">Submit Now</button>
+                            </form>
                         </div>
                     </div>
-
-                    <div class="form-row" style="display:flex; gap:10px;">
-                        <input type="number" id="p_adults" placeholder="Adults" min="1">
-                        <input type="number" id="p_kids" placeholder="Kids" min="0">
-                    </div>
-
-                    <textarea id="p_query" placeholder="Enter Your Travel Query" rows="4"></textarea>
-                    <button type="submit" class="submit-btn">Submit Now</button>
-                </form>
+                </div>
             </div>
         </div>
+
+
+    </header>
+
+    <!-- Mobile Side Panel -->
+    <div class="side-panel" id="sidePanel">
+        <div class="close-btn" id="closeBtn">&times;</div>
+        <a href="#" class="bld">Hello Guests</a>
+        <a href="#">Home</a>
+        <a href="#abouts">About Us</a>
+        <a href="#form">Explore Jaipur</a>
+        <a href="#form">Explore Agra</a>
+        <a href="#form">Explore Delhi</a>
+        <a href="#Packages">Explore Packages</a>
+        <a href="#attracts">Royal Attractions</a>
+
+        <a href="#testimonial">Happy Clients</a>
+        <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
     </div>
-</div>
-</div>
-
-   
-</header>
-
-<!-- Mobile Side Panel -->
-<div class="side-panel" id="sidePanel">
-    <div class="close-btn" id="closeBtn">&times;</div>
-     <a href="#" class="bld">Hello Guests</a>
-    <a href="#">Home</a>
-    <a href="#abouts">About Us</a>
-    <a href="#form">Explore Jaipur</a>
-    <a href="#form">Explore Agra</a>
-    <a href="#form">Explore Delhi</a>
-    <a href="#Packages">Explore Packages</a>
-    <a href="#attracts">Royal Attractions</a>
-    
-    <a href="#testimonial">Happy Clients</a>
- <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
-</div>
 
 
 
-<section class="bnr">
-    <video autoplay muted loop playsinline class="bg-video">
-        <source src="images/banner-video.mp4" type="video/mp4">
-    </video>
+    <section class="bnr">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="images/banner-video.mp4" type="video/mp4">
+        </video>
 
-    <!-- Overlay -->
-    <div class="video-overlay"></div>
+        <!-- Overlay -->
+        <div class="video-overlay"></div>
 
-    <div class="wrap">
-        <div class="banner-content">
-            <h1>Travel according to your desires</h1>
-            <p>Our tailor-made suggestions based on the season, your tastes, and your budget</p>
-           <a href="javascript:void(0)" class="custom-search-btn top" onclick="openPopup()">
-    <span class="btn-text">Explore the Golden Triangle</span>
-    <div class="icon-circle">
-        <img src="images/btn.png">
-    </div>
-</a>
+        <div class="wrap">
+            <div class="banner-content">
+                <h1>Travel according to your desires</h1>
+                <p>Our tailor-made suggestions based on the season, your tastes, and your budget</p>
+                <a href="javascript:void(0)" class="custom-search-btn top" onclick="openPopup()">
+                    <span class="btn-text">Explore the Golden Triangle</span>
+                    <div class="icon-circle">
+                        <img src="images/btn.png">
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
 
-<section class="about" id="abouts">
-<div class="wrap">
-    <div class="inr">
-    <div class="lft">
-    <h2>ABOUT US</h2>
-    </div>
-    <div class="rgt">
-        
-    <p>Custom-crafted journeys across India’s iconic Golden Triangle, thoughtfully designed around your tastes, travel style, and pace by our experienced regional specialists. A passion for heritage, elegance, and authenticity drives everything we create — from royal palaces and timeless monuments to vibrant bazaars and hidden cultural gems.</p>
-    </div>
-    </div>
+    <section class="about" id="abouts">
+        <div class="wrap">
+            <div class="inr">
+                <div class="lft">
+                    <h2>ABOUT US</h2>
+                </div>
+                <div class="rgt">
+                    <h2>A Journey Into the Northern Soul of India</h2>
+                    <p>From the throne of mighty empires to the monument of eternal love, from the city painted in
+                        shades of living history, this is more than a journey—it is a dialogue with time itself. Pause,
+                        breathe, and let the rush of tomorrow fade as you embrace the rare luxury of being fully
+                        present. Walk the paths once graced by emperors, inhale the fragrance of cardamom and centuries
+                        past, and stand before monuments not built for tourists but for love, power, sorrow, and faith.
+                        In these quiet, unforgettable moments, feel deeply and completely what it means to be human in a
+                        civilization so ancient, yet so vibrantly alive.</p>
+                </div>
+            </div>
 
-</div>
-</section>
-<img src="images/line.png" class="arch">
+        </div>
+    </section>
+    <img src="images/line.png" class="arch">
 
 
-<section class="services" id="Packages">
-<div class="wrap">
-    <h2>GOLDEN TRIANGLE</h2>
-    <p>Discover thoughtfully curated Golden Triangle journeys designed<br> for seamless travel and unforgettable cultural experiences.</p>
-<ul class="service">
-    <li>
-    <a href="#">
-      <div class="img-boxs">
-        <img src="images/delhi.jpg" alt="Jaipur">
-        <h3>Delhi</h3>
+    <section class="services" id="Packages">
+        <div class="wrap">
+            <h2>GOLDEN TRIANGLE</h2>
+            <p>Discover thoughtfully curated Golden Triangle journeys designed<br> for seamless travel and unforgettable
+                cultural experiences.</p>
+            <ul class="service">
+                <li>
+                    <a href="#">
+                        <div class="img-boxs">
+                            <img src="images/delhi.jpg" alt="Jaipur">
+                            <h3>Delhi</h3>
 
-        <div class="btn-boxs">
-          <h4>EXPLORE NOW</h4>
-          <img src="images/btn-1.png" alt="">
+                            <div class="btn-boxs">
+                                <h4>EXPLORE NOW</h4>
+                                <img src="images/btn-1.png" alt="">
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img-boxs">
+                            <img src="images/jaipur.jpg" alt="Jaipur">
+                            <h3>Jaipur</h3>
+
+                            <div class="btn-boxs">
+                                <h4>EXPLORE NOW</h4>
+                                <img src="images/btn-1.png" alt="">
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img-boxs">
+                            <img src="images/agra.jpg" alt="Jaipur">
+                            <h3>Agra</h3>
+
+                            <div class="btn-boxs">
+                                <h4>EXPLORE NOW</h4>
+                                <img src="images/btn-1.png" alt="">
+                            </div>
+
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+
+
+
+
         </div>
 
-      </div>
+    </section>
+
+
+    <section class="delhi">
+        <div class="wrap">
+
+            <!-- ORIGINAL HEADING + INTRO (UNCHANGED) -->
+            <div class="hdsa">
+                <div class="hdlft">
+                    <h2>DELHI — The Crown of Victoria</h2>
+                </div>
+
+                <div class="rgthds">
+                    <p>
+                        Delhi, the heart of India, has witnessed the rise and fall of empires<br> and became a symbol of
+                        freedom with India’s independence on<br> 15 August 1947.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="heritage">
+        <div class="wrap">
+
+
+            <div class="row">
+                <div class="col text">
+                    <h2>Old Delhi — The Mughal Legacy</h2>
+                    <p>
+                        The Mughals ruled India from 1526 to 1858, and Delhi was their imperial heart. During this
+                        golden era, they built some of the finest architectural wonders the world has ever seen —
+                        testaments to grandeur, art, and power.
+                    </p>
+
+                    <p>
+                        Red Fort, built by Emperor Shah Jahan in the 17th century, stands as a symbol of Mughal
+                        architecture and India's independence to this day — it's from its ramparts that the Indian
+                        Prime Minister addresses the nation every Independence Day.
+                    </p>
+
+                    <p>
+                        Facing it across the vibrant chaos of Chandni Chowk is Jama Masjid, one of the largest
+                        mosques in India, completed in 1656. Between these two monuments lies a maze of narrow
+                        lanes — bursting with the aroma of kebabs, the sound of prayer calls, the glitter of silver
+                        jewelry, and the shouts of traders who keep Old Delhi alive.
+                    </p>
+
+                    <p>
+                        And at the very soul of this sensory world lies Khari Baoli — Asia's largest wholesale spice
+                        market, tucked just behind Fatehpuri Masjid at the western end of Chandni Chowk. For
+                        centuries, it has been the aromatic backbone of Delhi's cuisine and commerce. Walk through
+                        its crowded alleys and the air itself changes — thick with the warmth of dried chilies, the
+                        earthiness of cumin, the sweetness of cinnamon, and the sharp bite of black pepper. Sacks
+                        overflowing with turmeric, cardamom, star anise, and exotic dried herbs line every corner,
+                        painted in colors that feel almost unreal. It was this very trade in spices — precious as gold
+                        in
+                        the medieval world — that first drew foreign powers to India's shores. Standing in Khari
+                        Baoli, you don't just smell spices; you breathe in centuries of history.
+                    </p>
+                </div>
+                <div class="col image">
+                    <video class="heritage-video" autoplay muted loop playsinline>
+                        <source src="images/british.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NEW SECTION ROW -->
+        <div class="bck">
+            <div class="wrap">
+                <div class="row reverse">
+                    <div class="col text">
+                        <h2>New Delhi — The British Crown</h2>
+                        <p>
+                            When the British arrived under the banner of the East India Company, they came as traders.
+                            But commerce soon turned into conquest. By 1757, after the Battle of Plassey, Britain began
+                            to rule India — a faraway empire built on trade, resource extraction, and political
+                            manipulation. It is no coincidence that spices — black pepper, indigo, and opium — were
+                            among the most coveted prizes that drew these distant powers ever deeper into India's
+                            interior.
+                        </p>
+
+                        <p>
+                            Under the British Raj, the capital was shifted from Calcutta to Delhi in 1911, marking the
+                            rise
+                            of New Delhi — a planned city of imperial ambition. Designed primarily by Sir Edwin Lutyens
+                            and Sir Herbert Baker, New Delhi became the embodiment of British power in the East.
+                        </p>
+
+                        <p>
+                            The heart of New Delhi is Rashtrapati Bhavan, once known as the Viceroy's House — the
+                            seat of the British Governor-General, now the residence of the President of India. It's a
+                            fusion of Western classical lines and Indian motifs, symbolizing both dominance and
+                            dialogue. The wide avenues, sprawling gardens, and symmetry of the Lutyens' Zone reflect
+                            an attempt to impose order on the vibrant chaos of Old Delhi.
+                        </p>
+
+                        <p>
+                            But beyond the architecture lay stories of exploitation — <span>trade in opium, black
+                                pepper,
+                                indigo, and treasures like the Kohinoor Diamond</span> that crossed oceans to adorn
+                            another
+                            crown. What began as trade ended as dominance, and through rebellion and resistance —
+                            most notably the Revolt of 1857 that first erupted in Delhi — the people's voice eventually
+                            reclaimed the city and the nation.
+                        </p>
+                    </div>
+
+                    <div class="col image">
+                        <video class="heritage-video" autoplay muted loop playsinline>
+                            <source src="images/raj.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="row">
+                <div class="col text">
+                    <h2>India Gate — The Memorial of Valor</h2>
+                    <p>
+                        At the center of New Delhi stands one of its most iconic landmarks — India Gate, a grand war
+                        memorial dedicated to nearly 84,000 Indian soldiers who lost their lives fighting for the
+                        British Indian Army during World War I, the Anglo-Afghan Wars, and other conflicts. Designed
+                        by the renowned architect Sir Edwin Lutyens in the 1920s, the monument reflects classical
+                        European architecture and draws inspiration from ancient Roman triumphal arches such as the
+                        Arch of Constantine in Rome. Rising proudly along the ceremonial Rajpath, India Gate has
+                        become far more than a memorial; it stands today as a symbol of sacrifice, honor, and
+                        national pride.
+                    </p>
+
+                    <p>
+                        Carved into its massive sandstone walls are the names of thousands of soldiers, preserving
+                        the memory of those who never returned home. Beneath the arch burns the Amar Jawan Jyoti
+                        (“Flame of the Immortal Soldier”), which was added after the 1971 Indo-Pak War as a tribute
+                        to the unknown soldiers who gave their lives for independent India. The eternal flame became
+                        a powerful reminder of courage and devotion to the nation, watched over by soldiers standing
+                        guard day and night.
+                    </p>
+
+                    <p>
+                        As the sun sets, the atmosphere around India Gate transforms completely. Families, tourists,
+                        street vendors, and children gather across the wide green lawns that surround the monument.
+                        The sound of laughter, the glow of lights, and the cool evening breeze give the area a unique
+                        energy that blends history with everyday life. Ice cream carts, food stalls, and evening walks
+                        turn the memorial grounds into one of Delhi’s most beloved public spaces, where remembrance
+                        and celebration exist side by side.
+                    </p>
+
+
+
+                </div>
+                <div class="col image">
+                    <video class="heritage-video" autoplay muted loop playsinline>
+                        <source src="images/india.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="bck">
+            <div class="wrap">
+                <div class="row reverse">
+                    <div class="col text">
+                        <h2>New Delhi — The British Crown</h2>
+                        <p>
+                            Delhi is not just a city; it is a living chronicle of civilization, shaped by centuries of
+                            empires, cultures, trade, and resistance. Kings, poets, traders, saints, and revolutionaries
+                            have all walked these same streets, leaving behind stories carved into stone and memory.
+                            From
+                            the peaceful spiritual gatherings at Nizamuddin Dargah to the colonial-era circles of
+                            Connaught
+                            Place, every corner of Delhi carries echoes of another age. Its forts, tombs, mosques,
+                            temples,
+                            and markets together tell the story of a city that has risen again and again through
+                            conquest,
+                            rebellion, and transformation.
+                        </p>
+
+                        <p>
+                            In the crowded lanes of Khari Baoli, the air is still filled with the fragrance of spices
+                            that
+                            once connected India to the great trade routes of the world. The scent of cardamom, black
+                            pepper, cinnamon, and dried chilies serves as a reminder of the wealth and commerce that
+                            drew
+                            merchants and foreign powers toward Delhi for centuries. Walking through these historic
+                            markets
+                            feels like stepping into a world where the past still breathes through every alley and every
+                            voice.
+                        </p>
+
+                        <p>
+                            Today, Old Delhi and New Delhi exist side by side as two worlds within one city — one
+                            preserving
+                            the vibrant chaos and soul of history, the other reflecting the vision of modern India. From
+                            the
+                            Mughal domes of Jama Masjid and the mighty walls of Red Fort to the grand colonial avenues
+                            leading to India Gate and Rashtrapati Bhavan, Delhi continues to blend history with modern
+                            life.
+                            It remains what it has always been — the beating heart, the living crown, and the timeless
+                            storyteller of India.
+                        </p>
+
+
+                    </div>
+
+                    <div class="col image">
+                        <video class="heritage-video" autoplay muted loop playsinline>
+                            <source src="images/then.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <section class="tajmahal">
+        <div class="wrap">
+            <div class="out">
+                <h2>Taj Mahal — A Symbol of<br> Love and Sorrow</h2>
+                <p>In the 17th century, a man lost the woman he loved most in the world. She was Mumtaz
+                    Mahal — his queen, his companion, his heart — <span>who died in 1631</span> while giving birth to
+                    their
+                    fourteenth child. <span>The man was Emperor Shah Jahan</span>, and his grief was so vast, so
+                    consuming, that no words could contain it. So he did what only an emperor could do — he
+                    turned his grief into marble.</p>
+            </div>
+
+
+
+            <img src="images/taj-2.png" class="tajs">
+            <div class="out">
+                <p>
+                    What followed was one of the greatest acts of devotion the world has ever seen. Over
+                    <span>20,000 artisans, craftsmen, and laborers</span> worked for more than 20 years to bring his
+                    vision
+                    to life <span>on the banks of the Yamuna River in Agra</span>. The finest white marble was sourced
+                    from
+                    Makrana in Rajasthan. Precious stones — lapis lazuli, turquoise, jade, coral, and carnelian —
+                    were inlaid into its walls in intricate floral patterns, a technique known as pietra dura.
+                    Calligraphy from the Quran adorned its arched gateways. Four minarets rose at its corners,
+                    perfectly symmetrical, as if even the sky had been arranged in mourning. The result was the Taj
+                    Mahal — a white marvel rising from the earth like a prayer, pure and
+                    silent, its reflecƟon shimmering in the long pool that stretches before it. Poets called it a
+                    teardrop on the face of eternity. Others called it the finest building ever raised by human
+                    hands. Both are right.
+                </p>
+
+
+                <div class="hdss">
+                    <h2>But the story does not end in beauty.<br> It ends in heartbreak.</h2>
+                    <p>
+                        <span>Shah Jahan's own son, Aurangzeb,</span> overthrew him in 1658 and imprisoned his father
+                        within
+                        the walls of Agra Fort — just a mile from the Taj Mahal. The man who had built the most
+                        magnificent tomb in the world was now a prisoner, stripped of his throne, his freedom, and
+                        his dignity. Yet even captivity could not take everything from him.
+                    </p>
+
+                    <p>
+                        From a small window in the Musamman Burj tower of Agra Fort, Shah Jahan could see the
+                        Taj Mahal in the distance — its white dome gleaming in the morning light, fading to gold at
+                        dusk, and dissolving into silver under the moon. Every day, for the remaining eight years of
+                        his life, he sat by that window and gazed at the monument he had built for the woman he had
+                        lost. It is said that Aurangzeb, despite his cruelty toward his father, wrote him letters
+                        regularly — keeping him informed about the upkeep and condition of the Taj Mahal,
+                        knowing that it was the only comfort left to the old emperor.
+                    </p>
+
+                    <p>
+                        When Shah Jahan died in 1666, he was laid to rest beside Mumtaz Mahal inside the Taj
+                        Mahal — the only asymmetrical element in an otherwise perfectly symmetrical structure, as
+                        if even in death, love refused to follow any rule.
+                    </p>
+
+                    <p>
+                        The Taj Mahal is often called a symbol of love. And it is. But it is also a symbol of loss, of
+                        obsession, and of the strange and painful lengths to which the human heart will go when it
+                        cannot let go. It is romantic, yes — but it is also the story of a man who gave everything for
+                        love, and in the end, could only watch it from a window.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="tajmahal rajs">
+        <div class="wrap">
+            <div class="out">
+                <h2>Rajasthan — The Land of the Maharajas</h2>
+                <p>A land that belongs to warriors and colors. A land where the desert blooms in fesƟvals,
+                    where every fort tells a baƩle cry frozen in stone, and where the warmth of the people rivals
+
+                    the warmth of the sun itself. This is Rajasthan — the Pink City and beyond, a kingdom that
+                    never truly ended, only changed its crown.</p>
+            </div>
+
+
+
+            <img src="images/raj-1.png" class="tajs">
+            <div class="out">
+
+
+                <div class="hdss">
+                    <h2>But before we begin, <br>let me share an experience.</h2>
+                    <p>
+                        The first Ɵme I encountered a man from Rajasthan, I was not prepared for what walked
+                        through the door. He greeted me with a wide, unhurried smile and the words — <span>"Khama
+                            Ghani</span>." A tradional Rajasthani greeƟng, it means I bow to you with humility — and in
+                        that
+                        single phrase, you understand everything about the culture that produced it. Grace. Dignity.
+                        Respect without transacƟon.
+                    </p>
+
+                    <p>
+                        The man himself was a definiƟon made flesh. Well-built, somewhere in his sixƟes, with a
+                        magnificent mustache that curled at the ends with the confidence of a man who had never
+                        doubted himself a single day in his life. On his head sat a grand Rajasthani pagri — a turban
+                        wrapped in the colors of royalty. His clothes were tradiƟonal, his posture straight as a
+                        minaret. He was a chauffeur by profession. A gentleman by nature. Mr. Singh. And he was
+                        always smiling — not the polite, performaƟve smile of someone trying to please, but the
+                        deep, seƩled smile of someone who is simply at peace with the world he inhabits.
+                    </p>
+
+                    <p class="lsts">
+                        That smile, I later understood, is Rajasthan itself.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <section class="heritage">
+        <div class="wrap">
+
+
+            <div class="row">
+                <div class="col text">
+                    <h2>Jaipur — The Pink City</h2>
+                    <p>
+                        Jaipur, the capital of Rajasthan, is called the Pink City for a reason rooted not in romance but
+                        in royal hospitality. In 1876, Maharaja Sawai Ram Singh ordered the enƟre city to be painted
+                        terracoƩa pink — a color tradiƟonally associated with warmth and welcome — in honor of
+                        the visit of Prince Albert of Wales. The color stuck, and today, the old walled city glows in
+                        shades of rose and rust, as if the city itself is perpetually dressed for a celebraƟon.
+                    </p>
+
+                    <p>
+                        Walking through its bazaars is an assault on the senses in the most magnificent way — block-
+                        printed fabrics spilling from shop fronts, the smell of spices mingling with incense, the claƩer
+
+                        of bangles and the calls of vendors selling everything from saffron to semi-precious stones.
+                        Jaipur does not whisper. It announces itself.
+                    </p>
+
+
+                </div>
+                <div class="col image">
+                    <video class="heritage-video" autoplay muted loop playsinline>
+                        <source src="images/jaipur.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- NEW SECTION ROW -->
+        <div class="bck">
+            <div class="wrap">
+                <div class="row reverse">
+                    <div class="col text">
+                        <h2>Hawa Mahal — The Palace of Winds</h2>
+                        <p>
+                            Standing at the edge of the old city like a crown placed gently on the skyline is the Hawa
+                            Mahal — the Palace of Winds. Built in 1799 by Maharaja Sawai Pratap Singh, it is one of the
+                            most instantly recognizable facades in all of India — a five-storey honeycomb of 953 small
+                            windows, each laƫced with intricately carved pink sandstone screens called jharokhas.
+                        </p>
+
+                        <p>
+                            It was built with a specific and remarkable purpose. The women of the royal household,
+                            bound by the tradiƟon of purdah, were not permiƩed to appear in public. Yet life —
+
+                            fesƟvals, processions, the bustle of the marketplace below — conƟnued without them.
+                            Hawa Mahal was their answer. From behind those carved screens, the royal women could
+                            watch the world pass by unseen, while the wind — channeled through the laƫce — kept the
+                            interior cool even in the fierce Rajasthani summer. A palace built not for power, but for
+                            the
+                            quiet, dignified desire to simply see.
+                        </p>
+
+                        <p>
+                            From the outside, especially at sunrise when the pink sandstone catches the first light of
+                            the
+                            morning, Hawa Mahal looks less like a building and more like a wave of stone that forgot to
+                            fall.
+                        </p>
+
+                    </div>
+
+                    <div class="col image">
+                        <video class="heritage-video" autoplay muted loop playsinline>
+                            <source src="images/hawa.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="row">
+                <div class="col text">
+                    <h2>Amber Fort — The Fortress of Gold</h2>
+                    <p>
+                        Eleven kilometers from the heart of Jaipur, perched on a ridge of the Aravalli Hills and gazing
+                        down at the sƟll waters of Maota Lake below, stands Amber Fort — one of the most
+                        breathtaking fortresses in the world.
+                    </p>
+
+                    <p>
+                        Built in 1592 by Raja Man Singh I and expanded over generaƟons by successive Maharajas,
+                        Amber Fort is a testament to the synthesis of Rajput and Mughal architecture. Its
+                        construcƟon used pale yellow and pink sandstone, and its walls rise in layers up the hillside
+                        — baƩlements and basƟons climbing toward the sky as if the mountain itself decided to
+                        become a palace.
+                    </p>
+
+                    <p>
+                        The entrance through the Suraj Pol — the Sun Gate — opens into a vast courtyard where the
+                        world seems to expand. Beyond it lies the Sheesh Mahal, the Palace of Mirrors — perhaps
+                        the most dazzling room in all of Rajasthan. Its walls and ceiling are encrusted enƟrely with
+                        Ɵny convex mirror pieces set into plasterwork of extraordinary delicacy. Light a single candle
+                        inside, and the room erupts into a thousand stars. It is said that a Maharaja could see the
+                        reflecƟon of the enƟre night sky without ever stepping outside.
+                    </p>
+                    <p>The fort is also home to the Diwan-i-Aam (Hall of Public Audience) and the Diwan-i-Khas
+                        (Hall of Private Audience) — spaces where jusƟce was dispensed and diplomacy was
+                        conducted, where the Maharajas received kings and emperors on equal terms. Walking
+                        through Amber Fort is not like visiƟng a museum. It is like stepping into a conversaƟon
+                        between centuries.</p>
+
+
+                </div>
+                <div class="col image">
+                    <video class="heritage-video" autoplay muted loop playsinline>
+                        <source src="images/amber.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="bck">
+            <div class="wrap">
+                <div class="row reverse">
+                    <div class="col text">
+                        <h2>Nahargarh Fort — The Tiger Fort</h2>
+                        <p>
+                            Watching over Jaipur from the ridge of the Aravalli Hills like a silent, eternal guardian is
+                            Nahargarh Fort — popularly known as the Tiger Fort. Built in 1734 by Maharaja Sawai Jai
+                            Singh II, it was originally constructed as a retreat and a defensive stronghold to protect
+                            the
+                            city below. Its name, Nahargarh, means "abode of Ɵgers" — a reflecƟon of both the wild
+                            terrain that surrounds it and the fierce spirit of the Rajput warriors who built it.
+                        </p>
+
+                        <p>
+                            Unlike the grandeur of Amber Fort, Nahargarh carries a quieter, more rugged beauty. Its
+                            thick walls snake along the uneven ridge of the hills, and the views from its ramparts are
+                            among the finest in Rajasthan — the enƟre Pink City stretching out below, fading into the
+                            golden haze of the desert horizon. At sunset, when the city lights begin to flicker on and
+                            the
+                            sky turns from orange to violet, the view from Nahargarh is something that stays with you
+                            long aŌer you have leŌ.
+                        </p>
+
+                        <p>
+                            Inside, the Madhavendra Bhawan — a palace built for the Maharaja's nine queens — is a
+                            fascinaƟng maze of interconnected suites, each idenƟcal in design so that no queen could
+                            claim more favor than another. Even in architecture, Rajasthan understood the poliƟcs of
+                            love.
+                        </p>
+
+
+                    </div>
+
+                    <div class="col image">
+                        <video class="heritage-video" autoplay muted loop playsinline>
+                            <source src="images/nahar.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="row">
+                <div class="col text">
+                    <h2>Rajasthan — Then and Now</h2>
+                    <p>
+                        Rajasthan is not a desƟnaƟon. It is an experience that begins the moment someone greets
+                        you with Khama Ghani and means it. It is Mr. Singh's curling mustache and unhurried smile. It is
+                        the wind moving through 953 stone windows. It is a candle igniƟng a thousand mirror-
+                        stars. It is a fort that watches over a city like a father watching over his children.
+                    </p>
+
+                    <p>
+                        The warriors are sƟll here — in the pride of the people, in the stories etched into every stone,
+                        in the colors that refuse to fade. Rajasthan does not simply preserve its history. It lives
+                        inside it, warmly and without apology, every single day.
+                    </p>
+
+
+
+
+                </div>
+                <div class="col image">
+                    <video class="heritage-video" autoplay muted loop playsinline>
+                        <source src="images/rajs.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <img src="images/line-2.png" class="arch">
+    <section class="testi" id="testimonial">
+        <div class="wrap">
+            <h2>Loved by Our Guests</h2>
+
+            <ul class="testimonial-carousel">
+                <li class="item">
+                    <img src="images/test.png">
+                    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture,
+                        and vibrant
+                        markets made every moment special. Each city had its own unique charm, creating memories we will
+                        cherish
+                        forever. Highly recommended for an amazing and enriching experience!</p>
+                    <h4>Rahul Singh</h4>
+                    <h5>January, 2026</h5>
+                </li>
+
+
+                <li class="item">
+                    <img src="images/test.png">
+                    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture,
+                        and vibrant
+                        markets made every moment special. Each city had its own unique charm, creating memories we will
+                        cherish
+                        forever. Highly recommended for an amazing and enriching experience!</p>
+                    <h4>Rahul Singh</h4>
+                    <h5>January, 2026</h5>
+                </li>
+
+
+
+                <li class="item">
+                    <img src="images/test.png">
+                    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture,
+                        and vibrant
+                        markets made every moment special. Each city had its own unique charm, creating memories we will
+                        cherish
+                        forever. Highly recommended for an amazing and enriching experience!</p>
+                    <h4>Rahul Singh</h4>
+                    <h5>January, 2026</h5>
+                </li>
+
+                <li class="item">
+                    <img src="images/test.png">
+                    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture,
+                        and vibrant
+                        markets made every moment special. Each city had its own unique charm, creating memories we will
+                        cherish
+                        forever. Highly recommended for an amazing and enriching experience!</p>
+                    <h4>Rahul Singh</h4>
+                    <h5>January, 2026</h5>
+                </li>
+
+            </ul>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-col">
+                <h3>Golden Triangle Tours</h3>
+                <p>Explore Delhi, Agra & Jaipur with complete comfort, personalized service, and unforgettable cultural
+                    experiences. Discover iconic landmarks, rich heritage, vibrant markets.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#abouts">About Us</a></li>
+                    <li><a href="#Packages">Packages</a></li>
+                    <li><a href="#testimonial">Happy Clients</a></li>
+                    <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>Email: <a href="mailto:info@goldentriangle.com">info@goldentriangle.com</a></p>
+                <p>Phone: <a href="tel:+919582276626">+91 95822 76626</a></p>
+                <p>India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Golden Triangle Tours. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <a href="https://wa.me/919679591167?text=Hello%20Welcome%20to%20Golden%20Triangle" class="whatsapp-float"
+        target="_blank">
+        <img src="images/whatshapp.png" alt="WhatsApp">
     </a>
-  </li>
-  <li>
-    <a href="#">
-      <div class="img-boxs">
-        <img src="images/jaipur.jpg" alt="Jaipur">
-        <h3>Jaipur</h3>
 
-        <div class="btn-boxs">
-          <h4>EXPLORE NOW</h4>
-          <img src="images/btn-1.png" alt="">
-        </div>
 
-      </div>
-    </a>
-  </li>
-    <li>
-    <a href="#">
-      <div class="img-boxs">
-        <img src="images/agra.jpg" alt="Jaipur">
-        <h3>Agra</h3>
 
-        <div class="btn-boxs">
-          <h4>EXPLORE NOW</h4>
-          <img src="images/btn-1.png" alt="">
-        </div>
+    <a href="javascript:void(0)" class="mobile-sticky-btn" onclick="openPopup()">Book Now</a>
 
-      </div>
-    </a>
-  </li>
-  
-</ul>
-       
 
-       
+    <script src="script.js"></script>
 
-      
-    </div>
-  
-</section>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const sidePanel = document.getElementById("sidePanel");
+        const closeBtn = document.getElementById("closeBtn");
+        const overlay = document.getElementById("overlay");
 
-
-<section class="attract" id="attracts">
-<div class="wrap">
-    <h2>Delhi Attractions</h2>
-   <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
-
-   <ul class="attract-list team-carousel ">
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-1.jpg" alt="Amber Fort">
-            <h3>Amber Fort</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-2.jpg" alt="Amber Fort">
-            <h3>Taj Mahal</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-3.jpg" alt="Amber Fort">
-            <h3>India Gate</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-4.jpg" alt="Amber Fort">
-            <h3>Jaigarh Fort</h3>
-        </div>
-    </li>
-      <li class="item">
-        <div class="img-box">
-            <img src="images/attract-5.jpg" alt="Amber Fort">
-            <h3>Anguri Bagh</h3>
-        </div>
-    </li>
-</ul>
-
-
-      
-        
-        
-       
-    </ul>
-</div>
-</section>
-
-
-<section class="attract two" id="attracts">
-<div class="wrap">
-    <h2>Agra Attractions</h2>
-   <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
-
-   <ul class="attract-list team-carousel ">
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-1.jpg" alt="Amber Fort">
-            <h3>Amber Fort</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-2.jpg" alt="Amber Fort">
-            <h3>Taj Mahal</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-3.jpg" alt="Amber Fort">
-            <h3>India Gate</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-4.jpg" alt="Amber Fort">
-            <h3>Jaigarh Fort</h3>
-        </div>
-    </li>
-      <li class="item">
-        <div class="img-box">
-            <img src="images/attract-5.jpg" alt="Amber Fort">
-            <h3>Anguri Bagh</h3>
-        </div>
-    </li>
-</ul>
-
-
-      
-        
-        
-       
-    </ul>
-</div>
-</section>
-
-
-<section class="attract" id="attracts">
-<div class="wrap">
-    <h2>Jaipur Attractions</h2>
-   <p>Explore the legendary landmarks that define the beauty <br>and heritage of the Golden Triangle.</p>
-
-   <ul class="attract-list team-carousel ">
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-1.jpg" alt="Amber Fort">
-            <h3>Amber Fort</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-2.jpg" alt="Amber Fort">
-            <h3>Taj Mahal</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-3.jpg" alt="Amber Fort">
-            <h3>India Gate</h3>
-        </div>
-    </li>
-
-    <li class="item">
-        <div class="img-box">
-            <img src="images/attract-4.jpg" alt="Amber Fort">
-            <h3>Jaigarh Fort</h3>
-        </div>
-    </li>
-      <li class="item">
-        <div class="img-box">
-            <img src="images/attract-5.jpg" alt="Amber Fort">
-            <h3>Anguri Bagh</h3>
-        </div>
-    </li>
-</ul>
-
-
-      
-        
-        
-       
-    </ul>
-</div>
-</section>
-
-
-
-<img src="images/line-2.png" class="arch">
-<section class="testi" id="testimonial">
-<div class="wrap">
-<h2>Loved by Our Guests</h2>
-
-<ul class="testimonial-carousel">
-<li class="item">
-    <img src="images/test.png">
-    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture, and vibrant
-        markets made every moment special. Each city had its own unique charm, creating memories we will cherish
-        forever. Highly recommended for an amazing and enriching experience!</p>
-    <h4>Rahul Singh</h4>
-    <h5>January, 2026</h5>
-</li>
-
-
-<li class="item">
-    <img src="images/test.png">
-    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture, and vibrant
-        markets made every moment special. Each city had its own unique charm, creating memories we will cherish
-        forever. Highly recommended for an amazing and enriching experience!</p>
-    <h4>Rahul Singh</h4>
-    <h5>January, 2026</h5>
-</li>
-
-
-
-<li class="item">
-    <img src="images/test.png">
-    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture, and vibrant
-        markets made every moment special. Each city had its own unique charm, creating memories we will cherish
-        forever. Highly recommended for an amazing and enriching experience!</p>
-    <h4>Rahul Singh</h4>
-    <h5>January, 2026</h5>
-</li>
-
-<li class="item">
-    <img src="images/test.png">
-    <p>Our trip to the Golden Triangle was truly unforgettable! The beautiful mix of history, culture, and vibrant
-        markets made every moment special. Each city had its own unique charm, creating memories we will cherish
-        forever. Highly recommended for an amazing and enriching experience!</p>
-    <h4>Rahul Singh</h4>
-    <h5>January, 2026</h5>
-</li>
-
-</ul></div>
-
-</section>
-
-
-
-
-<footer class="footer">
-  <div class="container">
-    
-    <div class="footer-col">
-      <h3>Golden Triangle Tours</h3>
-      <p>Explore Delhi, Agra & Jaipur with complete comfort, personalized service, and unforgettable cultural experiences. Discover iconic landmarks, rich heritage, vibrant markets.</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#abouts">About Us</a></li>
-        <li><a href="#Packages">Packages</a></li>
-         <li><a href="#testimonial">Happy Clients</a></li>
-      <a href="javascript:void(0)" onclick="openPopup()">Contact Us</a>
-      </ul>
-    </div>
-
- <div class="footer-col">
-  <h4>Contact Info</h4>
-  <p>Email: <a href="mailto:info@goldentriangle.com">info@goldentriangle.com</a></p>
-  <p>Phone: <a href="tel:+919582276626">+91 95822 76626</a></p>
-  <p>India</p>
-</div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Golden Triangle Tours. All Rights Reserved.</p>
-  </div>
-</footer>
-
-
-
-<a href="https://wa.me/919679591167?text=Hello%20Welcome%20to%20Golden%20Triangle"
-   class="whatsapp-float"
-   target="_blank">
-   <img src="images/whatshapp.png" alt="WhatsApp">
-</a>
-
-
-
-<a href="javascript:void(0)" class="mobile-sticky-btn" onclick="openPopup()">Book Now</a>
-
-
-
-<script src="script.js"></script>
-
-<script>
-const hamburger = document.getElementById("hamburger");
-const sidePanel = document.getElementById("sidePanel");
-const closeBtn = document.getElementById("closeBtn");
-const overlay = document.getElementById("overlay");
-
-hamburger.addEventListener("click", () => {
-    sidePanel.classList.add("active");
-    overlay.classList.add("active");
-});
-
-closeBtn.addEventListener("click", () => {
-    sidePanel.classList.remove("active");
-    overlay.classList.remove("active");
-});
-
-overlay.addEventListener("click", () => {
-    sidePanel.classList.remove("active");
-    overlay.classList.remove("active");
-});
-</script>
-
-
-
-
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en'
-  }, 'google_translate_element');
-
-  // Wait for Google dropdown to load
-  setTimeout(loadLanguages, 1000);
-}
-
-function loadLanguages() {
-  const googleSelect = document.querySelector(".goog-te-combo");
-  const customSelect = document.getElementById("lang-select");
-
-  if (!googleSelect) return;
-
-  // Copy all languages
-  for (let i = 0; i < googleSelect.options.length; i++) {
-    let opt = googleSelect.options[i];
-    let newOption = document.createElement("option");
-    newOption.value = opt.value;
-    newOption.textContent = opt.text;
-    customSelect.appendChild(newOption);
-  }
-}
-
-// Change language
-document.getElementById("lang-select").addEventListener("change", function () {
-  const googleSelect = document.querySelector(".goog-te-combo");
-  if (googleSelect) {
-    googleSelect.value = this.value;
-    googleSelect.dispatchEvent(new Event("change"));
-  }
-});
-</script>
-<script>
-$(document).ready(function(){
-
-  // Team Carousel
-$('.team-carousel').owlCarousel({
-    margin: 15, // Mobile par margin thoda kam rakhein taaki space mile
-    loop: true,
-    autoplay: true,
-    nav: false,
-    dots: true,
-    responsive: {
-        0: { 
-            items: 1, // Ab 0px se hi 2 items dikhenge
-            margin: 0 // Chhoti screen ke liye kam gap
-        },
-        700: { 
-            items: 2 
-        },
-        1000: { 
-            items: 4
-        }
-    }
-});
-  // Testimonial Carousel
-  $('.testimonial-carousel').owlCarousel({
-      margin: 20,
-      loop: true,
-      autoplay: true,
-      nav: false,
-      dots: true,
-      responsive: {
-          0: { items: 1 },
-          600: { items: 2 },
-          1000: { items: 3 }
-      }
-  });
-
-});
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<script type="text/javascript">
-(function() {
-    // Dashboard > Account > Public Key se ye copy karein
-    emailjs.init("f9hDOyLzOfXevMe4O"); 
-})();
-
-document.addEventListener("DOMContentLoaded", function() {
-    const phoneElement = document.querySelector("#p_phone");
-    const form = document.getElementById("enquiryForm");
-
-    // Phone Input Setup
-    const iti = window.intlTelInput(phoneElement, {
-        initialCountry: "in",
-        separateDialCode: true,
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-
-    // Submit Logic
-    if(form) {
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
-
-            if (!iti.isValidNumber()) {
-                alert("Please enter a valid phone number.");
-                return;
-            }
-
-            const btn = form.querySelector(".submit-btn");
-            btn.innerText = "Sending...";
-            btn.disabled = true;
-
-            const templateParams = {
-                from_name: document.getElementById("p_name").value,
-                user_email: document.getElementById("p_email").value,
-                phone_no: iti.getNumber(),
-                arrival_date: document.getElementById("p_arrival").value,
-                adults_count: document.getElementById("p_adults").value || "0",
-                kids_count: document.getElementById("p_kids").value || "0",
-                message: document.getElementById("p_query").value
-            };
-
-          
-            emailjs.send("service_kbpdoab", "template_oyr3ymh", templateParams)
-                .then(function() {
-                    alert("Success! Your enquiry has been sent. We will contact you soon.");
-                    form.reset();
-                    btn.innerText = "Submit Now";
-                    btn.disabled = false;
-                    closePopup();
-                }, function(error) {
-                    alert("Failed to send... " + JSON.stringify(error));
-                    btn.innerText = "Submit Now";
-                    btn.disabled = false;
-                });
+        hamburger.addEventListener("click", () => {
+            sidePanel.classList.add("active");
+            overlay.classList.add("active");
         });
-    }
-});
 
-function closePopup() {
-    document.getElementById("bookPopup").style.display = "none";
-}
-</script>
+        closeBtn.addEventListener("click", () => {
+            sidePanel.classList.remove("active");
+            overlay.classList.remove("active");
+        });
 
-
-
-
-
-
+        overlay.addEventListener("click", () => {
+            sidePanel.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
 
 
 
 
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+
+            // Wait for Google dropdown to load
+            setTimeout(loadLanguages, 1000);
+        }
+
+        function loadLanguages() {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            const customSelect = document.getElementById("lang-select");
+
+            if (!googleSelect) return;
+
+            // Copy all languages
+            for (let i = 0; i < googleSelect.options.length; i++) {
+                let opt = googleSelect.options[i];
+                let newOption = document.createElement("option");
+                newOption.value = opt.value;
+                newOption.textContent = opt.text;
+                customSelect.appendChild(newOption);
+            }
+        }
+
+        // Change language
+        document.getElementById("lang-select").addEventListener("change", function () {
+            const googleSelect = document.querySelector(".goog-te-combo");
+            if (googleSelect) {
+                googleSelect.value = this.value;
+                googleSelect.dispatchEvent(new Event("change"));
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            // Team Carousel
+            $('.team-carousel').owlCarousel({
+                margin: 15, // Mobile par margin thoda kam rakhein taaki space mile
+                loop: true,
+                autoplay: true,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1, // Ab 0px se hi 2 items dikhenge
+                        margin: 0 // Chhoti screen ke liye kam gap
+                    },
+                    700: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+            // Testimonial Carousel
+            $('.testimonial-carousel').owlCarousel({
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+
+
+
+
+
+
+        });
+
+
+
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            // Dashboard > Account > Public Key se ye copy karein
+            emailjs.init("f9hDOyLzOfXevMe4O");
+        })();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const phoneElement = document.querySelector("#p_phone");
+            const form = document.getElementById("enquiryForm");
+
+            // Phone Input Setup
+            const iti = window.intlTelInput(phoneElement, {
+                initialCountry: "in",
+                separateDialCode: true,
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+
+            // Submit Logic
+            if (form) {
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+
+                    if (!iti.isValidNumber()) {
+                        alert("Please enter a valid phone number.");
+                        return;
+                    }
+
+                    const btn = form.querySelector(".submit-btn");
+                    btn.innerText = "Sending...";
+                    btn.disabled = true;
+
+                    const templateParams = {
+                        from_name: document.getElementById("p_name").value,
+                        user_email: document.getElementById("p_email").value,
+                        phone_no: iti.getNumber(),
+                        arrival_date: document.getElementById("p_arrival").value,
+                        adults_count: document.getElementById("p_adults").value || "0",
+                        kids_count: document.getElementById("p_kids").value || "0",
+                        message: document.getElementById("p_query").value
+                    };
+
+
+                    emailjs.send("service_kbpdoab", "template_oyr3ymh", templateParams)
+                        .then(function () {
+                            alert("Success! Your enquiry has been sent. We will contact you soon.");
+                            form.reset();
+                            btn.innerText = "Submit Now";
+                            btn.disabled = false;
+                            closePopup();
+                        }, function (error) {
+                            alert("Failed to send... " + JSON.stringify(error));
+                            btn.innerText = "Submit Now";
+                            btn.disabled = false;
+                        });
+                });
+            }
+        });
+
+        function closePopup() {
+            document.getElementById("bookPopup").style.display = "none";
+        }
+    </script>
 
 
 
@@ -668,22 +1110,33 @@ function closePopup() {
 
 
 
-<script>
-  function openPopup() {
-    document.getElementById("bookPopup").style.display = "block";
-}
 
-function closePopup() {
-    document.getElementById("bookPopup").style.display = "none";
-}
 
-// Close popup if user clicks outside the box
-window.onclick = function(event) {
-    let modal = document.getElementById("bookPopup");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+
+
+
+
+
+
+
+
+    <script>
+        function openPopup() {
+            document.getElementById("bookPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("bookPopup").style.display = "none";
+        }
+
+        // Close popup if user clicks outside the box
+        window.onclick = function (event) {
+            let modal = document.getElementById("bookPopup");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
