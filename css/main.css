@@ -3,7 +3,7 @@
 abbr, address, article, aside, audio, b, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video, a {
     margin: 0;
     padding: 0;
-     font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
     color:#252525;
     font-size: 14px;
     color: #000;
@@ -49,7 +49,9 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    background: #fffcf5; /* 👈 clean overlay look */
+    background: #fff9ea; /* 👈 clean overlay look */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08),
+        0 2px 10px rgba(139, 94, 60, 0.12);
 }
 
 /* Left Section */
@@ -251,7 +253,7 @@ body {
     font-weight: 300;
     letter-spacing: 1px;
     color:#fff;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
 }
 
 .banner-content p {
@@ -262,7 +264,13 @@ body {
     font-weight: 300;
 }
 
-
+.tajs{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
 
 .custom-search-btn {
   display: flex;
@@ -332,14 +340,14 @@ body {
 .about .inr{display:flex;gap:40px;}
 .about .inr .lft{flex:1;}
 .about .inr .rgt{flex: 5;}
-.about .inr .rgt h2{font-size: 27px;font-family: "Libre Baskerville", serif;margin-bottom: 8px;color: #733600;}
+.about .inr .rgt h2{font-size: 27px;font-family: "Noto Serif", serif;;margin-bottom: 8px;color: #733600;}
 .about .inr .lft h2{font-size: 18px;color: #4c4c4c;font-weight: 400;}
 .about .inr .rgt p{font-size: 20px;line-height: 35px;color: #303030;}
  
 
-.services{display:block;background-color: #fff7f2;padding-top: 50px;padding-bottom: 70px;margin-bottom: 70px;margin-top: -6px;}
+.services{display:block;background-color: #fff9eb;padding-top: 50px;padding-bottom: 70px;margin-bottom: 70px;margin-top: -6px;}
 .services p{font-size: 15px;color: #1c1c1c;line-height: 22px;margin-bottom: 32px;text-align: center;}
-.services h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Libre Baskerville", serif;text-align: center;margin-bottom: 7px;}
+.services h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Noto Serif", serif;;text-align: center;margin-bottom: 7px;}
 .service {
     display: flex;
     justify-content: center;
@@ -377,7 +385,7 @@ body {
     margin: 0;
     z-index: 2;
     text-transform: uppercase;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
 }
 .btn-boxs img{width:fit-content;}
 /* Explore Button */
@@ -420,7 +428,7 @@ body {
 
 
 .attract{display:block;margin-bottom: 90px;}
-.attract h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Libre Baskerville", serif;text-align: center;margin-bottom: 7px;text-transform: uppercase;}
+.attract h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Noto Serif", serif;;text-align: center;margin-bottom: 7px;text-transform: uppercase;}
 .attract p{font-size: 15px;color: #1c1c1c;line-height: 22px;margin-bottom: 32px;text-align: center;}
 .attract .attract-list {
     display: flex;
@@ -472,12 +480,12 @@ body {
     margin-top: -9px;
     }
 .testi ul{display: flex;margin-top: 30px;}
-.testi ul li{display:block;background-color: #fff;padding: 14px 13px;border-radius: 12px;padding-top: 22px;margin-right: 20px;}
+.testi ul li{display:block;background-color: #f9f9f9;padding: 14px 13px;border-radius: 12px;padding-top: 22px;margin-right: 20px;border: 1px solid #f3f3f3;}
 .testi ul li img{display:block;margin-bottom: 19px;}
-.testi ul li p{display:block;font-size: 12px;font-weight: 500;margin-bottom: 20px;}
+.testi ul li p{display:block;font-size: 12px;font-weight: 500;margin-bottom: 20px;line-height: 22px;color: #303030;}
 .testi ul li h4{display:block;font-size: 14px;font-weight: 500;}
 .testi ul li h5{display:block;font-size: 12px;font-weight: 300;}
-.testi h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Libre Baskerville", serif;text-align: center;margin-bottom: 26px;text-transform: uppercase;}
+.testi h2{font-size: 32px;color: #733600;font-weight: 800;font-family: "Noto Serif", serif;;text-align: center;margin-bottom: 26px;text-transform: uppercase;}
 
 
 
@@ -522,7 +530,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Noto Serif", serif;;
 }
 
 .form-body {
@@ -651,7 +659,7 @@ textarea.error-border {
   color: #fff;
   font-size: 22px;
   font-weight: 400;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Noto Serif", serif;;
 }
 
 .footer-col p {
@@ -783,7 +791,7 @@ textarea.error-border {
     font-size: 24px;
     color: #733600;
     font-weight: 800;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
     margin-bottom: 26px;
     text-transform: uppercase;
     }
@@ -801,7 +809,7 @@ textarea.error-border {
     font-size: 32px;
     color:#733600;
     font-weight:800;
-    font-family:"Libre Baskerville", serif;
+    font-family:"Noto Serif", serif;;
     margin-bottom: 10px;
     text-transform:uppercase;
     text-align: center;
@@ -843,14 +851,15 @@ textarea.error-border {
     color: #321b07;
     font-weight:800;
     margin-bottom: 11px;
-    font-family:"Libre Baskerville", serif;
+    font-family:"Noto Serif", serif;;
 }
 .text p span{font-weight:500;color:#be3310;}
 .text p{
     font-size: 14px;
     line-height: 25px;
-    color:#1c1c1c;
+    color: #383838;
     margin-bottom: 12px;
+    font-weight: 400;
 }
 
 .image img{
@@ -894,7 +903,7 @@ textarea.error-border {
     display: block;
 }
 .bck{
-    background-color: #fffcf5;   /* Black Background */
+    background-color: #fff9eb;   /* Black Background */
     padding: 60px 0;
     margin-bottom: 70px;
     }
@@ -908,21 +917,21 @@ textarea.error-border {
 .tajmahal h2{font-size: 32px;
     color: #733600;
     font-weight: 800;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
     margin-bottom: 10px;
     text-transform: uppercase;
     text-align: center;}
 .tajmahal p span{color:#993117;font-weight:600;}
-.tajmahal p{display: block;text-align: center;line-height: 27px;}
+.tajmahal p{display: block;text-align: center;line-height: 27px;font-weight: 400;color: #383838;}
 .tajmahal .row{margin-top: 40px;}
-.tajmahal .hdss p{text-align: center;margin-bottom: 6px;}
-
+.tajmahal .hdss p{text-align: center;margin-bottom: 6px;font-weight: 400;color: #383838;font-size: 14px;}
+.tajmahal .hdss .lsts{font-weight: 600;color: #9b2507;font-family: "Noto Serif", serif;}
 .tajmahal .hdss h2{
     font-size: 25px;
     color: #8b2d15;
     font-weight: 800;
     margin-bottom: 11px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
     text-transform: capitalize;
     text-align:center;
     line-height: 37px;
@@ -933,7 +942,7 @@ textarea.error-border {
 
 
 
-.tajmahal.rajs{display:block;padding:80px 0px;background-color: #fff7f2;}
+.tajmahal.rajs{display:block;padding:80px 0px;background-color: #fff9eb;}
 .lsts{font-weight:600;}
 
 
@@ -1021,7 +1030,7 @@ textarea.error-border {
     margin-top: 0;
     text-align: center;
     font-size: 26px;
-    font-family: "Libre Baskerville", serif;
+    font-family: "Noto Serif", serif;;
     color: #b84b2f;
     margin-bottom: 20px;
 }
@@ -1133,7 +1142,7 @@ textarea.error-border {
   }
   .banner-content h1{font-size: 44px;}
   .about .inr{flex-direction: column;gap: 10px;}
-  .about .inr .lft h2{font-family: "Libre Baskerville", serif;color: #0c0c0c;}
+  .about .inr .lft h2{font-family: "Noto Serif", serif;;color: #0c0c0c;}
   .about .inr .rgt p{font-size: 22px;line-height: 37px;}
   .about{margin-top:50px;margin-bottom: 50px;}
   .btn-boxs h4{font-size:10px;}
